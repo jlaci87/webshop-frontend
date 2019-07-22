@@ -1,0 +1,61 @@
+#return-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: $color-primary;
+    width: 8rem;
+    height: 8rem;
+    display: none;
+    text-decoration: none;
+    padding: 2px;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    z-index: 9999;
+    cursor: pointer;
+
+    & i {
+        color: $color-white;
+        margin: 0;
+        position: relative;
+        left: 1.8rem;
+        top: 1.6rem;
+        @supports (-ms-ime-align:auto) {
+            left: 2rem;
+            
+        }
+        @supports (-ms-ime-align:auto) {
+            top: 2rem;
+            
+        }
+        font-size: 5rem;
+        // transform: rotate(135deg);
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+    }
+
+    &:hover{
+        background-color: $color-secondary;
+    }
+
+    &:hover i{
+        color: $color-white;
+        top: .8rem;
+    }
+
+    &:hover i:focus,
+    &:hover i:focus-within{
+        outline-color: transparent;
+    }
+
+    &::active i {
+        color: $color-white;
+        top: -2px;
+    }
+}
+

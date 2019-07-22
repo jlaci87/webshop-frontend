@@ -1,0 +1,13 @@
+.form__collapse{
+    padding-top: 1.5rem;
+    &--2{
+        display: none;
+    }
+}
+
+#billing-checkbox:checked ~ .form__collapse{
+    display: none;
+}
+#registration-checkbox:checked ~ .form__collapse--2{
+    display: block;
+}

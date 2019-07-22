@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <script src="/assets/js/jquery.js"></script>
+
+    <title>Webshop - INDEX</title>
+</head>
+<body>
+    <div class="container container__index">
+
+        <div class="topbar" id="topbar">
+            <div class="topbar__button-wrapper">
+                <a href="#" class="topbar__button"><p>Log in</p></a>
+                <div class="topbar__button-undreline"></div>
+            </div>
+            <div class="topbar__button-wrapper">
+                <a href="#" class="topbar__button"><p>Sign up</p></a>
+                <div class="topbar__button-undreline"></div>
+            </div>
+            <div class="topbar__button-wrapper">
+                <a href="#" class="topbar__button"><p>Information</p></a>
+                <div class="topbar__button-undreline"></div>
+            </div>
+            <div class="topbar__button-wrapper">
+                <div class="lang-selector">
+                    <div class="lang-selector__selected">
+                        <div class="lang-selector__hun lang-checked">
+                            <img src="/assets/img/lang/hun.png" class="lang-selector__selected-img" alt="hu-flag">
+                        </div>
+                        <div class="lang-selector__uk">
+                            <img src="/assets/img/lang/uk.png" class="lang-selector__selected-img" alt="hu-flag">
+                        </div>
+                        <div class="lang-selector__ger">
+                            <img src="/assets/img/lang/ger.png" class="lang-selector__selected-img" alt="hu-flag">
+                        </div>
+                        <div class="lang-selector__esp">
+                            <img src="/assets/img/lang/esp.png" class="lang-selector__selected-img" alt="hu-flag">
+                        </div>
+                    </div>
+                    <div class="lang-selector__picker">
+                        <input type="radio" id="lang-hun" class="lang-selector__checkbox" name="language" value="hun" checked>
+                        <label for="lang-hun" class="lang-selector__box">
+                            <img src="/assets/img/lang/hun.png" class="lang-selector__picker-img" alt="hu-flag">
+                        </label>
+                        <input type="radio" id="lang-uk" class="lang-selector__checkbox" name="language" value="uk">
+                        <label for="lang-uk" class="lang-selector__box">
+                            <img src="/assets/img/lang/uk.png" class="lang-selector__picker-img" alt="uk-flag">
+                        </label>
+                        <input type="radio" id="lang-ger" class="lang-selector__checkbox" name="language" value="ger">
+                        <label for="lang-ger" class="lang-selector__box">
+                            <img src="/assets/img/lang/ger.png" class="lang-selector__picker-img" alt="ger-flag">
+                        </label>
+                        <input type="radio" id="lang-esp" class="lang-selector__checkbox" name="language" value="esp">
+                        <label for="lang-esp" class="lang-selector__box">
+                            <img src="/assets/img/lang/esp.png" class="lang-selector__picker-img" alt="esp-flag">
+                        </label>
+                    </div>                
+                </div>
+            </div>
+        </div>
+<!-- ------------------------------------------------------------ HEADER-start ---------------------------------------------------- -->        
+        <header class="header">
+            <nav class="navigation">
+                <a href="index.html" class="navigation__button"><p>Home</p></a>
+                <a href="#" class="navigation__button toggle-down"><p>Categories <i class="fas fa-sort-down"></i></p></a>
+    <!------------------------- MEGADROPPDOWN-start ---------------------------------------->
+                <div class="mega-dd">
+                    <div class="mega-dd__nav">
+                        <div class="mega-dd__section mega-dd__section-1" data-index="1">
+                            <h3 class="mega-dd__title">Trousers</h3>                   
+                            <ul class="mega-dd__list">
+                                <li class="mega-dd__item"><a href="#" class="mega-dd__link">subcategory-1</a></li>
+                                <li class="mega-dd__item"><a href="#" class="mega-dd__link">subcategory-2</a></li>
+                                <li class="mega-dd__item"><a href="#" class="mega-dd__link">subcategory-3</a></li>
+                                <li class="mega-dd__item"><a href="#" class="mega-dd__link">subcategory-4</a></li>
+                                <li class="mega-dd__item"><a href="#" class="mega-dd__link">subcategory-5</a></li>
+                            </ul>
+                        </div>
+                        <div class="mega-dd__section mega-dd__section-2" data-index="2">
+                            <h3 class="mega-dd__title">Sweaters</h3>                   
+                            <ul class="mega-dd__list">
+                                <li class="mega-dd__item"><a href="#" class="mega-dd__link">subcategory-1</a></li>
+                                <li class="mega-dd__item"><a href="#" class="mega-dd__link">subcategory-2</a></li>
+                                <li class="mega-dd__item"><a href="#" class="mega-dd__link">subcategory-3</a></li>
+                                <li class="mega-dd__item"><a href="#" class="mega-dd__link">subcategory-4</a></li>
+                                <li class="mega-dd__item"><a href="#" class="mega-dd__link">subcategory-5</a></li>
+                            </ul>
+                        </div>
+                        <div class="mega-dd__section mega-dd__section-3" data-index="3">
+                            <h3 class="mega-dd__title">T-Shirts</h3>                   
+                            <ul class="mega-dd__list">
+                                <li class="mega-dd__item"><a href="#" class="mega-dd__link">subcategory-1</a></li>
+                                <li class="mega-dd__item"><a href="#" class="mega-dd__link">subcategory-2</a></li>
+                                <li class="mega-dd__item"><a href="#" class="mega-dd__link">subcategory-3</a></li>
+                                <li class="mega-dd__item"><a href="#" class="mega-dd__link">subcategory-4</a></li>
+                                <li class="mega-dd__item"><a href="#" class="mega-dd__link">subcategory-5</a></li>
+                            </ul>
+                        </div>
+                        <div class="mega-dd__section mega-dd__section-4" data-index="4">
+                            <h3 class="mega-dd__title">Shirts</h3>                   
+                            <ul class="mega-dd__list">
+                                <li class="mega-dd__item"><a href="#" class="mega-dd__link">subcategory-1</a></li>
+                                <li class="mega-dd__item"><a href="#" class="mega-dd__link">subcategory-2</a></li>
+                                <li class="mega-dd__item"><a href="#" class="mega-dd__link">subcategory-3</a></li>
+                                <li class="mega-dd__item"><a href="#" class="mega-dd__link">subcategory-4</a></li>
+                                <li class="mega-dd__item"><a href="#" class="mega-dd__link">subcategory-5</a></li>
+                            </ul>
+                        </div>
+                        <div class="mega-dd__section mega-dd__section-5" data-index="5">
+                            <h3 class="mega-dd__title">Outerwear</h3>                   
+                            <ul class="mega-dd__list">
+                                <li class="mega-dd__item"><a href="#" class="mega-dd__link">subcategory-1</a></li>
+                                <li class="mega-dd__item"><a href="#" class="mega-dd__link">subcategory-2</a></li>
+                                <li class="mega-dd__item"><a href="#" class="mega-dd__link">subcategory-3</a></li>
+                                <li class="mega-dd__item"><a href="#" class="mega-dd__link">subcategory-4</a></li>
+                                <li class="mega-dd__item"><a href="#" class="mega-dd__link">subcategory-5</a></li>
+                            </ul>
+                        </div>
+                        
+                        
+                    </div>
+                    <div class="mega-dd__advert">
+                        <div class="mega-dd__img-container">
+                            <img src="/assets/img/ruha-1a.jpg" alt="mega-dd__advert" class="mega-dd__img mega-dd__category-1 fade-in" data-index="1">
+                            <img src="/assets/img/ruha-5a.jpg" alt="mega-dd__advert" class="mega-dd__img mega-dd__category-2" data-index="2">
+                            <img src="/assets/img/ruha-4a.jpg" alt="mega-dd__advert" class="mega-dd__img mega-dd__category-3" data-index="3">
+                            <img src="/assets/img/ruha-7a.jpg" alt="mega-dd__advert" class="mega-dd__img mega-dd__category-4" data-index="4">
+                            <img src="/assets/img/ruha-2a.jpg" alt="mega-dd__advert" class="mega-dd__img mega-dd__category-5" data-index="5">
+    
+                        </div>
+                    </div>
+                    
+                </div>
+    <!-- ----------------------------------- MEGADROPPDOWN-end ----------------------------------- -->
+                <a href="#" class="navigation__button"><p>Blog</p></a>
+                <a href="#" class="navigation__button"><p>Contacts</p></a>
+                <a href="cart.html" class="navigation__button toggle-down"><p>Cart&nbsp;<i class="fas fa-shopping-cart navigation__cart"></i>&nbsp;<span class="navigation__cart-count">2</span></p></a>
+    <!------------------------- MEGADROPPDOWN--SMALL-start ---------------------------------------->            
+                <div class="mega-dd mega-dd--small">
+<!-- ------------------------------------------------- CARTITEM-start ----------------------------------------- -->
+                <div class="cart__item cart__item--small">
+                        <div class="cart__item-heading">
+                            <h3 class="product-item-title product-item-title--xsmall">
+                                Red Solid Pant
+                            </h3>
+                            <button class="btn btn__remove btn__remove--small">Remove item</button>
+                        </div>
+                        <div class="cart__item-content">
+                            <div class="cart__item-container">
+                                <img src="/assets/img/ruha-1a.jpg" alt="cart item image" class="cart__item-img">
+                            </div>
+                            <div class="cart__item-size">
+                                    <label for="quantitiy">Size:&nbsp;</label>
+                                <select name="item-size" class="product-item__num product-item__num--wide" id="item-size">
+                                    <option value="xs">XS</option>
+                                    <option value="s">S</option>
+                                    <option value="m">M</option>
+                                    <option value="l" selected>L</option>
+                                    <option value="xl">XL</option>
+                                </select>
+                            </div>
+                            <div class="cart__item-quantity">
+                                <label for="quantitiy">Quantyity:&nbsp;</label>
+                                <input class="product-item__num " id="quantity" type="number" value="1">
+                            </div>
+                            <div class="cart__item-price">Price:&nbsp;<span>$30.00</span></div>
+    
+                        </div>
+                    </div>
+<!-- ------------------------------------------------- CARTITEM-end ----------------------------------------- -->
+<!-- ------------------------------------------------- CARTITEM-start ----------------------------------------- -->
+                    <div class="cart__item cart__item--small">
+                        <div class="cart__item-heading">
+                            <h3 class="product-item-title product-item-title--xsmall">
+                                Blue Suit
+                            </h3>
+                            <button class="btn btn__remove btn__remove--small">Remove item</button>
+                        </div>
+                        <div class="cart__item-content">
+                            <div class="cart__item-container">
+                                <img src="/assets/img/ruha-2a.jpg" alt="cart item image" class="cart__item-img">
+                            </div>
+                            <div class="cart__item-size">
+                                    <label for="quantitiy">Size:&nbsp;</label>
+                                <select name="item-size" class="product-item__num product-item__num--wide" id="item-size">
+                                    <option value="xs">XS</option>
+                                    <option value="s">S</option>
+                                    <option value="m">M</option>
+                                    <option value="l" selected>L</option>
+                                    <option value="xl">XL</option>
+                                </select>
+                            </div>
+                            <div class="cart__item-quantity">
+                                <label for="quantitiy">Quantyity:&nbsp;</label>
+                                <input class="product-item__num " id="quantity" type="number" value="1">
+                            </div>
+                            <div class="cart__item-price">Price:&nbsp;<span>$30.00</span></div>
+
+                        </div>
+                    </div>
+<!-- ------------------------------------------------- CARTITEM-end ----------------------------------------- -->
+                </div>
+    <!------------------------- MEGADROPPDOWN--SMALL-end ---------------------------------------->
+                <div class="search__open">
+                    <input type="checkbox" id="search" class="search__open-checkbox">
+                    <label for="search" class="search__open-btn">SEARCH</label>
+                    <div class="search">
+                        <form class="search__container">
+                            <button class="search__btn" type="submit"><i class="fas fa-search navigation__search"></i></button>
+                            <input type="text" placeholder="Search..." name="search" class="search__input">
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </header>
+<!-- ------------------------------------------------- HEADER-end ---------------------------------------------------------- -->
+<!-- ------------------------------------------------- CAROUSEL-start ---------------------------------------------------------- -->
+        <div class="carousel slider">
+            <div class="slide"><img src="assets/img/slider/webshop-2082844_1920.jpg"></div>
+            <div class="slide"><img src="assets/img/slider/shop-906722_1920.jpg"></div>
+            <div class="slide"><img src="assets/img/slider/laptop-2838917_1920.jpg"></div>
+            <div class="slide"><img src="assets/img/slider/holiday-shopping-1921658_1920.jpg"></div>
+            <div class="slide"><img src="assets/img/slider/e-commerce-402822_1920.jpg"></div>
+            <div class="slide"><img src="assets/img/slider/arranged-1842261_1920.jpg"></div>
+            <div class="slide"><img src="assets/img/slider/apparel-1850804_1920.jpg"></div>
+        </div>
+<!-- ------------------------------------------------- CAROUSEL-end ---------------------------------------------------------- -->  
+<!-- ------------------------------------------------- HIGHLIGHTED-INFO-start ---------------------------------------------------------- -->
+<section class="highlighted-info">
+    <div class="highlighted-info__content">
+        <h3 class="higlighted-info-header">
+            Super Sale
+        </h3>
+        <p class="highlighted-info__text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum sit exercitationem nam, aperiam ratione magni autem adipisci rerum distinctio delectus cumque, assumenda quidem saepe quo officiis reiciendis. Animi, ipsum unde. Nadipisci sunt enim vero ex velit nulla aspernatur laudantium quisquam fugit voluptate eaque ducimus? Ab. Necessitatibus rerum eligendi quas? Aut sed inventore laboriosam mollitia in iste nulla corrupti accusamus sequi!
+        </p>
+    </div>
+    <figure class="highlighted-info__figure">
+        <img src="/assets/img/sale-info.jpg" alt="sale" class="highlighted-info__img">
+        <figcaption class="highlighted-info__caption">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </figcaption>
+        <a href="#" class="btn btn__forward">Forward</a>
+    </figure>
+</section>
+<!-- ------------------------------------------------- HIGHLIGHTED-INFO-end ---------------------------------------------------------- -->
+<!-- ------------------------------------------------- INFO-CARDS-start ---------------------------------------------------------- -->
+<section class="info-cards">
+    vásrlási infó
+</section>
+<!-- ------------------------------------------------- INFO-CARDS-end ---------------------------------------------------------- -->
+<!-- ----------------------------------------- HIGHLIHTED-PRODUCT-start  ------------------------------------------- -->
+<section class="highlighted__products highlighted__products--index">
+    <h2 class="section-heading u-margin-left-medium">Featured<span>&nbsp;</span><span class="section-heading__second-word">Products</span></h2>
+    <div class="highlighted__carousel">
+<!-- -----------------------------------SLIDE -- HIGHLIHTED-PRODUCT-CARD-start ----------------------------------- -->
+        <div class="slide">
+            <div class="product-card">
+                <a href="#" class="product-card__link">
+                <button class="btn btn__card-overflow btn__wish"><span class="btn-title">Add to wishlist</span><i class="fas fa-heart"></i></button>
+                <button class="btn btn__card-overflow btn__compare"><span class="btn-title">Compare</span><i class="fas fa-exchange-alt"></i></button>
+                <button class="btn btn__card-overflow btn__view"><span class="btn-title">Quick View</span><i class="far fa-eye"></i></button>
+                <div class="product-card__rating">
+                    <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                </div>
+                <div class="product-card__img-container">
+                    <img src="/assets/img/ruha-1a.jpg" alt="product-card__img--1" class="product-card__img product-card__img--1">
+                    <img src="/assets/img/ruha-1b.jpg" alt="product-card__img--2" class="product-card__img product-card__img--2">
+                </div>
+                <div class="product-card__info">
+                    <p class="product-card__name">Red Solid Pant</p>
+                    <p class="product-card__price">$30.00</p>
+                </div>
+                <button class="btn btn__add-cart">Add to cart<span class="btn-icon"></span></button>
+                <a href="cart.html" class="product-card__cart-link">View Cart</a>
+                <!-- display: none if cart is empty -->
+            </div>
+        </div>
+<!-- -----------------------------------SLIDE -- HIGHLIHTED-PRODUCT-CARD-end ----------------------------------- -->
+<!-- -----------------------------------SLIDE -- HIGHLIHTED-PRODUCT-CARD-start ----------------------------------- -->
+        <div class="slide">
+            <div class="product-card">
+                <a href="#" class="product-card__link">
+                <button class="btn btn__card-overflow btn__wish"><span class="btn-title">Add to wishlist</span><i class="fas fa-heart"></i></button>
+                <button class="btn btn__card-overflow btn__compare"><span class="btn-title">Compare</span><i class="fas fa-exchange-alt"></i></button>
+                <button class="btn btn__card-overflow btn__view"><span class="btn-title">Quick View</span><i class="far fa-eye"></i></button>
+                <div class="product-card__rating">
+                    <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                </div>
+                <div class="product-card__img-container">
+                    <img src="/assets/img/ruha-2a.jpg" alt="product-card__img--1" class="product-card__img product-card__img--1">
+                    <img src="/assets/img/ruha-2b.jpg" alt="product-card__img--2" class="product-card__img product-card__img--2">
+                </div>
+                <div class="product-card__info">
+                    <p class="product-card__name">Red Solid Pant</p>
+                    <p class="product-card__price">$30.00</p>
+                </div>
+                <button class="btn btn__add-cart">Add to cart<span class="btn-icon"></span></button>
+                <a href="cart.html" class="product-card__cart-link">View Cart</a>
+                <!-- display: none if cart is empty -->
+            </div>
+        </div>
+<!-- -----------------------------------SLIDE -- HIGHLIHTED-PRODUCT-CARD-end ----------------------------------- -->
+<!-- -----------------------------------SLIDE -- HIGHLIHTED-PRODUCT-CARD-start ----------------------------------- -->
+        <div class="slide">
+            <div class="product-card">
+                <a href="#" class="product-card__link">
+                <button class="btn btn__card-overflow btn__wish"><span class="btn-title">Add to wishlist</span><i class="fas fa-heart"></i></button>
+                <button class="btn btn__card-overflow btn__compare"><span class="btn-title">Compare</span><i class="fas fa-exchange-alt"></i></button>
+                <button class="btn btn__card-overflow btn__view"><span class="btn-title">Quick View</span><i class="far fa-eye"></i></button>
+                <div class="product-card__rating">
+                    <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                </div>
+                <div class="product-card__img-container">
+                    <img src="/assets/img/ruha-3a.jpg" alt="product-card__img--1" class="product-card__img product-card__img--1">
+                    <img src="/assets/img/ruha-3b.jpg" alt="product-card__img--2" class="product-card__img product-card__img--2">
+                </div>
+                <div class="product-card__info">
+                    <p class="product-card__name">Red Solid Pant</p>
+                    <p class="product-card__price">$30.00</p>
+                </div>
+                <button class="btn btn__add-cart">Add to cart<span class="btn-icon"></span></button>
+                <a href="cart.html" class="product-card__cart-link">View Cart</a>
+                <!-- display: none if cart is empty -->
+            </div>
+        </div>
+<!-- -----------------------------------SLIDE -- HIGHLIHTED-PRODUCT-CARD-end ----------------------------------- -->
+<!-- -----------------------------------SLIDE -- HIGHLIHTED-PRODUCT-CARD-start ----------------------------------- -->
+        <div class="slide">
+            <div class="product-card">
+                <a href="#" class="product-card__link">
+                <button class="btn btn__card-overflow btn__wish"><span class="btn-title">Add to wishlist</span><i class="fas fa-heart"></i></button>
+                <button class="btn btn__card-overflow btn__compare"><span class="btn-title">Compare</span><i class="fas fa-exchange-alt"></i></button>
+                <button class="btn btn__card-overflow btn__view"><span class="btn-title">Quick View</span><i class="far fa-eye"></i></button>
+                <div class="product-card__rating">
+                    <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                </div>
+                <div class="product-card__img-container">
+                    <img src="/assets/img/ruha-4a.jpg" alt="product-card__img--1" class="product-card__img product-card__img--1">
+                    <img src="/assets/img/ruha-4b.jpg" alt="product-card__img--2" class="product-card__img product-card__img--2">
+                </div>
+                <div class="product-card__info">
+                    <p class="product-card__name">Red Solid Pant</p>
+                    <p class="product-card__price">$30.00</p>
+                </div>
+                <button class="btn btn__add-cart">Add to cart<span class="btn-icon"></span></button>
+                <a href="cart.html" class="product-card__cart-link">View Cart</a>
+                <!-- display: none if cart is empty -->
+            </div>
+        </div>
+<!-- -----------------------------------SLIDE -- HIGHLIHTED-PRODUCT-CARD-end ----------------------------------- -->
+<!-- -----------------------------------SLIDE -- HIGHLIHTED-PRODUCT-CARD-start ----------------------------------- -->
+        <div class="slide">
+            <div class="product-card">
+                <a href="#" class="product-card__link">
+                <button class="btn btn__card-overflow btn__wish"><span class="btn-title">Add to wishlist</span><i class="fas fa-heart"></i></button>
+                <button class="btn btn__card-overflow btn__compare"><span class="btn-title">Compare</span><i class="fas fa-exchange-alt"></i></button>
+                <button class="btn btn__card-overflow btn__view"><span class="btn-title">Quick View</span><i class="far fa-eye"></i></button>
+                <div class="product-card__rating">
+                    <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                </div>
+                <div class="product-card__img-container">
+                    <img src="/assets/img/ruha-5a.jpg" alt="product-card__img--1" class="product-card__img product-card__img--1">
+                    <img src="/assets/img/ruha-5b.jpg" alt="product-card__img--2" class="product-card__img product-card__img--2">
+                </div>
+                <div class="product-card__info">
+                    <p class="product-card__name">Red Solid Pant</p>
+                    <p class="product-card__price">$30.00</p>
+                </div>
+                <button class="btn btn__add-cart">Add to cart<span class="btn-icon"></span></button>
+                <a href="cart.html" class="product-card__cart-link">View Cart</a>
+                <!-- display: none if cart is empty -->
+            </div>
+        </div>
+<!-- -----------------------------------SLIDE -- HIGHLIHTED-PRODUCT-CARD-end ----------------------------------- -->
+<!-- -----------------------------------SLIDE -- HIGHLIHTED-PRODUCT-CARD-start ----------------------------------- -->
+        <div class="slide">
+            <div class="product-card">
+                <a href="#" class="product-card__link">
+                <button class="btn btn__card-overflow btn__wish"><span class="btn-title">Add to wishlist</span><i class="fas fa-heart"></i></button>
+                <button class="btn btn__card-overflow btn__compare"><span class="btn-title">Compare</span><i class="fas fa-exchange-alt"></i></button>
+                <button class="btn btn__card-overflow btn__view"><span class="btn-title">Quick View</span><i class="far fa-eye"></i></button>
+                <div class="product-card__rating">
+                    <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                </div>
+                <div class="product-card__img-container">
+                    <img src="/assets/img/ruha-6a.jpg" alt="product-card__img--1" class="product-card__img product-card__img--1">
+                    <img src="/assets/img/ruha-6b.jpg" alt="product-card__img--2" class="product-card__img product-card__img--2">
+                </div>
+                <div class="product-card__info">
+                    <p class="product-card__name">Red Solid Pant</p>
+                    <p class="product-card__price">$30.00</p>
+                </div>
+                <button class="btn btn__add-cart">Add to cart<span class="btn-icon"></span></button>
+                <a href="cart.html" class="product-card__cart-link">View Cart</a>
+                <!-- display: none if cart is empty -->
+            </div>
+        </div>
+<!-- -----------------------------------SLIDE -- HIGHLIHTED-PRODUCT-CARD-end ----------------------------------- -->
+<!-- -----------------------------------SLIDE -- HIGHLIHTED-PRODUCT-CARD-start ----------------------------------- -->
+        <div class="slide">
+            <div class="product-card">
+                <a href="#" class="product-card__link">
+                <button class="btn btn__card-overflow btn__wish"><span class="btn-title">Add to wishlist</span><i class="fas fa-heart"></i></button>
+                <button class="btn btn__card-overflow btn__compare"><span class="btn-title">Compare</span><i class="fas fa-exchange-alt"></i></button>
+                <button class="btn btn__card-overflow btn__view"><span class="btn-title">Quick View</span><i class="far fa-eye"></i></button>
+                <div class="product-card__rating">
+                    <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                </div>
+                <div class="product-card__img-container">
+                    <img src="/assets/img/ruha-7a.jpg" alt="product-card__img--1" class="product-card__img product-card__img--1">
+                    <img src="/assets/img/ruha-7b.jpg" alt="product-card__img--2" class="product-card__img product-card__img--2">
+                </div>
+                <div class="product-card__info">
+                    <p class="product-card__name">Red Solid Pant</p>
+                    <p class="product-card__price">$30.00</p>
+                </div>
+                <button class="btn btn__add-cart">Add to cart<span class="btn-icon"></span></button>
+                <a href="cart.html" class="product-card__cart-link">View Cart</a>
+                <!-- display: none if cart is empty -->
+            </div>
+        </div>
+<!-- -----------------------------------SLIDE -- HIGHLIHTED-PRODUCT-CARD-end ----------------------------------- -->
+<!-- -----------------------------------SLIDE -- HIGHLIHTED-PRODUCT-CARD-start ----------------------------------- -->
+        <div class="slide">
+            <div class="product-card">
+                <a href="#" class="product-card__link">
+                <button class="btn btn__card-overflow btn__wish"><span class="btn-title">Add to wishlist</span><i class="fas fa-heart"></i></button>
+                <button class="btn btn__card-overflow btn__compare"><span class="btn-title">Compare</span><i class="fas fa-exchange-alt"></i></button>
+                <button class="btn btn__card-overflow btn__view"><span class="btn-title">Quick View</span><i class="far fa-eye"></i></button>
+                <div class="product-card__rating">
+                    <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                </div>
+                <div class="product-card__img-container">
+                    <img src="/assets/img/ruha-8a.jpg" alt="product-card__img--1" class="product-card__img product-card__img--1">
+                    <img src="/assets/img/ruha-8b.jpg" alt="product-card__img--2" class="product-card__img product-card__img--2">
+                </div>
+                <div class="product-card__info">
+                    <p class="product-card__name">Red Solid Pant</p>
+                    <p class="product-card__price">$30.00</p>
+                </div>
+                <button class="btn btn__add-cart">Add to cart<span class="btn-icon"></span></button>
+                <a href="cart.html" class="product-card__cart-link">View Cart</a>
+                <!-- display: none if cart is empty -->
+            </div>
+        </div>
+<!-- -----------------------------------SLIDE -- HIGHLIHTED-PRODUCT-CARD-end ----------------------------------- -->
+<!-- -----------------------------------SLIDE -- HIGHLIHTED-PRODUCT-CARD-start ----------------------------------- -->
+        <div class="slide">
+            <div class="product-card">
+                <a href="#" class="product-card__link">
+                <button class="btn btn__card-overflow btn__wish"><span class="btn-title">Add to wishlist</span><i class="fas fa-heart"></i></button>
+                <button class="btn btn__card-overflow btn__compare"><span class="btn-title">Compare</span><i class="fas fa-exchange-alt"></i></button>
+                <button class="btn btn__card-overflow btn__view"><span class="btn-title">Quick View</span><i class="far fa-eye"></i></button>
+                <div class="product-card__rating">
+                    <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                </div>
+                <div class="product-card__img-container">
+                    <img src="/assets/img/ruha-9a.jpg" alt="product-card__img--1" class="product-card__img product-card__img--1">
+                    <img src="/assets/img/ruha-9b.jpg" alt="product-card__img--2" class="product-card__img product-card__img--2">
+                </div>
+                <div class="product-card__info">
+                    <p class="product-card__name">Red Solid Pant</p>
+                    <p class="product-card__price">$30.00</p>
+                </div>
+                <button class="btn btn__add-cart">Add to cart<span class="btn-icon"></span></button>
+                <a href="cart.html" class="product-card__cart-link">View Cart</a>
+                <!-- display: none if cart is empty -->
+            </div>
+        </div>
+<!-- -----------------------------------SLIDE -- HIGHLIHTED-PRODUCT-CARD-end ----------------------------------- -->
+    </div>
+</section>
+<!-- ----------------------------------------- HIGHLIHTED-PRODUCT-end  ------------------------------------------- -->
+<!-- ------------------------------------------------- TOP-CATEGORIES-start ---------------------------------------------------------- -->
+<section class="top-categories">
+    top categories
+</section>
+<!-- ------------------------------------------------- TOP-CATEGORIES-end ---------------------------------------------------------- -->
+<!-- ------------------------------------------------- RECENT-BLOG-start ---------------------------------------------------------- -->
+<section class="recent-blog">
+    blog posts
+</section>
+<!-- ------------------------------------------------- RECENT-BLOG-end ---------------------------------------------------------- -->
+<!-- ------------------------------------------------- TOP-BRANDS-start ---------------------------------------------------------- -->
+<section class="top-brands">
+    slider
+</section>
+<!-- ------------------------------------------------- TOP-BRANDS-end ---------------------------------------------------------- -->
+<!-- ------------------------------------------------- NEWSLETTER-start ---------------------------------------------------------- -->
+<section class="newsletter">
+    facebook + newsletter sign up
+</section>
+<!-- ------------------------------------------------- NEWSLETTER-end ---------------------------------------------------------- -->
+    
+    <!-- -------------------------------------------------------------------- FOOTER-strat  ------------------------------------------------------------------------ -->
+        <footer class="footer footer--index">
+    
+            <div class="footer__container">
+        <!-- ----------------------------------------- FOOTER-SECTION-start  ------------------------------------------- -->
+                <div class="footer__section">
+                    <h3 class="footer-heading">Pages</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="#" class="footer__link footer__item-link">Registration</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link footer__item-link">Home</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link footer__item-link">Categories</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link footer__item-link">Blog</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link footer__item-link">Contact</a></li>
+                        <li class="footer__item"><a href="cart.html" class="footer__link footer__item-link">Cart</a></li>
+                </div>
+        <!-- ----------------------------------------- FOOTER-SECTION-start  ------------------------------------------- -->
+                <div class="footer__section">
+                    <h3 class="footer-heading">My Account</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="#" class="footer__link footer__item-link">Profile</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link footer__item-link">Wish List</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link footer__item-link">Previous Purchases</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link footer__item-link">Settings</a></li>
+                </div>
+        <!-- ----------------------------------------- FOOTER-SECTION-start  ------------------------------------------- -->
+                <div class="footer__section">
+                    <h3 class="footer-heading">About Us</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="#" class="footer__link footer__item-link">Company Info</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link footer__item-link">Blog</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link footer__item-link">Advertise with us</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link footer__item-link">Policies</a></li>
+    
+                </div>
+        <!-- ----------------------------------------- FOOTER-SECTION-start  ------------------------------------------- -->
+                <div class="footer__section">
+                    <h3 class="footer-heading">Help & Contact</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="#" class="footer__link footer__item-link">Contact us</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link footer__item-link">Purchase Info</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link footer__item-link">FAQ</a></li>
+     
+                </div>
+        <!-- ----------------------------------------- FOOTER-SECTION-end  ------------------------------------------- -->
+        <!-- ----------------------------------------- FOOTER-SECTION-start  ------------------------------------------- -->
+                <div class="footer__section">
+                    <h3 class="footer-heading">Stay Tuned</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="#" class="footer__link footer__item-link"><i class="fab fa-facebook-square"></i>&nbsp;Facebook</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link footer__item-link"><i class="fab fa-twitter-square"></i>&nbsp;Twitter</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link footer__item-link"><i class="fab fa-instagram"></i>&nbsp;Instagram</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link footer__item-link"><i class="fab fa-youtube-square"></i>&nbsp;Youtube</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link footer__item-link"><i class="fas fa-envelope-square"></i>&nbsp;Newsletter</a></li>
+                </div>
+        <!-- ----------------------------------------- FOOTER-SECTION-end  ------------------------------------------- -->
+            </div>
+            <div class="footer__rights">
+                <p>Coryright  &COPY; <a href="https://proonline.hu"class="footer__link footer__link--rights">Pro Online</a>, 2019.</p>
+            </div>
+    
+        </footer>
+<!-- -------------------------------------------------------------------- FOOTER-end  ------------------------------------------------------------------------ -->
+    </div>
+        <!-- to top button -->
+        <div id="return-to-top">
+            <div class="return-to-top-inner">
+                <a href="javascript:" id=""><i class="fas fa-chevron-up"></i></a>
+            </div>
+        </div>
+        
+ 
+    <script src="/assets/js/back-to-top.js"></script>
+    <script src="/assets/js/nav-from-top.js"></script>
+    <script src="/assets/js/slick.js"></script>
+    <script src="/assets/js/ion.rangeSlider.js"></script>
+    
+
+    <!-- <script>
+    // This is the important part!
+
+function collapseSection(element) {
+  // get the height of the element's inner content, regardless of its actual size
+  var sectionHeight = element.scrollHeight;
+  
+  // temporarily disable all css transitions
+  var elementTransition = element.style.transition;
+  element.style.transition = '';
+  
+  // on the next frame (as soon as the previous style change has taken effect),
+  // explicitly set the element's height to its current pixel height, so we 
+  // aren't transitioning out of 'auto'
+  requestAnimationFrame(function() {
+    element.style.height = sectionHeight + 'px';
+    element.style.transition = elementTransition;
+    
+    // on the next frame (as soon as the previous style change has taken effect),
+    // have the element transition to height: 0
+    requestAnimationFrame(function() {
+      element.style.height = 0 + 'px';
+    });
+  });
+  
+  // mark the section as "currently collapsed"
+  element.setAttribute('data-collapsed', 'true');
+}
+
+function expandSection(element) {
+  // get the height of the element's inner content, regardless of its actual size
+  var sectionHeight = element.scrollHeight;
+  
+  // have the element transition to the height of its inner content
+  element.style.height = sectionHeight + 'px';
+
+  // when the next css transition finishes (which should be the one we just triggered)
+  element.addEventListener('transitionend', function(e) {
+    // remove this event listener so it only gets triggered once
+    element.removeEventListener('transitionend', arguments.callee);
+    
+    // remove "height" from the element's inline styles, so it can return to its initial value
+    element.style.height = null;
+  });
+  
+  // mark the section as "currently not collapsed"
+  element.setAttribute('data-collapsed', 'false');
+}
+
+document.querySelector('.sidebar__tog').addEventListener('click', function(e) {
+  var section = document.querySelector('.sibebar__subcategory-list');
+  var isCollapsed = section.getAttribute('data-collapsed') === 'true';
+    
+  if(isCollapsed) {
+    expandSection(section)
+    section.setAttribute('data-collapsed', 'false')
+  } else {
+    collapseSection(section)
+  }
+});
+    
+    </script> -->
+
+    <!-- config js -->
+    <script src="/assets/js/back-to-top.js"></script>
+    <script src="/assets/js/slider.js"></script>
+    <script src="/assets/js/highlighted-slider.js"></script>
+    <script src="/assets/js/filter.js"></script>
+    <script src="/assets/js/lang-selector.js"></script>
+    <script src="/assets/js/mega-dd.js"></script>
+    <script src="/assets/js/product-gallery.js"></script>
+    <script src="/assets/js/tabs.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+.category-toggle {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 200;
+    background-color: $color-white;
+    width: 20vw;
+    border-bottom: 2px solid $color-primary;
+    transform-origin: left;
+    transform: scaleX(0);
+    opacity: 0;
+    transition: all .4s;
+
+    &--2 {
+        position: absolute;
+        top:0;
+        left: 100%;
+        background-color: $color-white;
+        width: 20vw;
+        border-bottom: 2px solid $color-primary;
+        transform-origin: left;
+        transform: scaleX(0);
+        opacity: 0;
+        transition: all .4s;
+    }
+
+    &__item,
+    &__item--2{
+        position: relative;
+        
+    }
+    &__item:not(:last-child),
+    &__item--2:not(:last-child){
+        border-bottom: 1px solid $color-grey-light-3;
+    }
+    &__link,
+    &__link--2{
+        display: block;
+        padding: 1rem 1rem;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__icon{
+        padding-right: 2rem;
+        transition: none !important;
+    }
+    &__link:link,
+    &__link:visited,
+    &__link--2:link,
+    &__link--2:visited{
+        text-decoration: none;
+        color: $color-grey-light-1;
+        background-color: $color-white;
+        transition: all .2s;
+    }
+    &__link:hover,
+    &__link:active,
+    &__link--2:hover,
+    &__link--2:active{
+        color: $color-white;
+        background-color: $color-secondary;
+    }
+
+    &__link:hover + .category-toggle--2,
+    .category-toggle--2:hover {
+        transform: scaleX(1);
+        opacity: 1;
+    }
+}

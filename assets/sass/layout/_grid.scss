@@ -1,0 +1,33 @@
+.container{
+    display: grid;
+
+    &__index{
+        grid-template-rows: 3.2rem 7.5rem 60vh repeat(2,min-content) minmax(min-content, 40rem) repeat(2,min-content) minmax(min-content, 40rem) min-content;
+        grid-template-columns: 
+        [full-start] minmax(4rem, 1fr) [center-start] repeat(8, [col-start] 1fr [col-end]) [center-end] minmax(4rem, 1fr)  [full-end];
+    }
+    &__products{
+        grid-template-rows: 3.2rem 7.5rem 60vh min-content minmax(min-content, 40rem) repeat(2,min-content);
+        grid-template-columns: 
+        [full-start sidebar-start] minmax(20rem, 28rem) [sidebar-end] minmax(4rem, 1fr) [center-start] repeat(8, [col-start] 1fr [col-end]) [center-end] minmax(4rem, 1fr)  [advert-start] minmax(16rem, 24rem) [advert-end full-end];
+
+        @media only screen and (max-width: 62em) {
+            grid-template-rows: 3.2rem 7.5rem 60vh  repeat(2,min-content) minmax(min-content, 40rem) min-content;
+            grid-template-columns: [full-start sidebar-start] minmax(20rem, 28rem) [sidebar-end center-start] repeat(8, 1fr) [center-end full-end];
+        }
+    }
+
+    &__product{
+        grid-template-rows: 3.2rem 7.5rem min-content minmax(min-content, 40rem) repeat(2,min-content);
+        grid-template-columns: 
+        [full-start sidebar-start] minmax(20rem, 28rem) [sidebar-end] minmax(4rem, 1fr) [center-start] repeat(8, [col-start] 1fr [col-end]) [center-end] minmax(4rem, 1fr)  [advert-start] minmax(16rem, 24rem) [advert-end full-end];
+    }
+
+    &__cart{
+        grid-template-rows: 3.2rem 7.5rem repeat(2,min-content);
+        grid-template-columns: 
+        [full-start] minmax(4rem, 1fr) [center-start] repeat(8, [col-start] 1fr [col-end]) [center-end] minmax(4rem, 1fr)  [full-end];
+    }
+
+}
+

@@ -1,0 +1,10 @@
+.advert {
+    background-color: $color-primary;
+    grid-column: advert-start / advert-end;
+    grid-row: 4 / 4;
+
+    @media only screen and (max-width: 62em) {
+        grid-column: full-start / full-end;
+        grid-row: 5 / 5;
+    }
+}

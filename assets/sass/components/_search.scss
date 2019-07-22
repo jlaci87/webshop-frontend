@@ -1,0 +1,51 @@
+.search {
+    position: absolute;
+    right: 0;
+    padding-left: 1rem;
+    display: flex;
+    align-items: center;
+    transform-origin: right;
+    transform: translateX(100%);
+    transition: all .2s;
+    &__open {
+        display: flex;
+        &-checkbox{
+            display: none;
+        }
+        &-checkbox:checked ~ .search{
+            transform: translateX(0);
+        }
+        &-checkbox:checked ~ &-btn{
+            background-color: $color-primary;
+        }
+        &-btn{
+            padding: 2.4rem;
+            cursor: pointer;
+            color: $color-white;
+            transition: all .2s;
+            &:hover {
+                background-color: $color-secondary;
+            }
+        }
+    }
+
+    &__container {
+        padding: 1.975rem 0;
+        height: 3.55rem;
+        display: flex;
+        align-items: stretch;
+        
+    }
+    &__btn {
+        width: 3.55rem;
+        border: none;
+        background-color: $color-secondary;
+        color: $color-white;
+        cursor: pointer;
+    }
+    &__input{
+        border: none;
+        padding-left: 1rem;
+        width: 20.5rem;
+    }
+}

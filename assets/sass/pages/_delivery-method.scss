@@ -1,0 +1,34 @@
+.delivery{
+    border: 1px solid $color-grey-light-2;
+    padding: 1rem 2rem;
+    margin-bottom: 3rem;
+    
+    
+    &-address{
+        color: $color-grey-light-1;
+        &__container{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 2rem;
+            font-size: 1.4rem;
+        }
+        &__label{
+            color: $color-grey-light-2;
+        }
+    }
+    &-type{
+        font-size: 1.4rem;
+        color: $color-grey-light-2;
+        padding: 0 0  2rem 3.5rem;
+        display: block;
+        margin-bottom: 3rem;
+        border-bottom: 1px solid $color-grey-light-3;
+        
+    
+        &__wrapper:last-child .delivery-type{
+            margin-bottom: 0;
+            border-bottom: none;
+        }
+    }
+}

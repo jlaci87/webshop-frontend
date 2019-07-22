@@ -1,0 +1,78 @@
+.navigation{
+    display: flex;
+    flex:2;
+    position: relative;
+
+    background-color: $color-primary;
+
+    align-items: stretch;
+    justify-content: space-evenly;
+    
+
+    &__button:first-child {
+        margin-left: auto;
+    }
+    
+    &__button,
+    &__button:visited {
+        color: $color-white;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 1.6rem;
+        padding: 0 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        p{
+            display: flex;
+            align-items: center;
+        }
+        i{
+            margin: -1rem 0 0 .5rem;
+        }
+    }
+
+    &__button:hover,
+    &__button:active {
+        
+        background-color: $color-secondary;
+    }
+    &__button:hover &__cart-count,
+    &__button:active &__cart-count {
+        
+        background-color: $color-primary;
+        color: $color-white;
+        animation: flip-scale .6s;
+    }
+
+    &__cart {
+        margin: 0 !important;
+    }
+    &__cart-count {
+        position: relative;
+        width: 1.7rem;
+        height: 1.7rem;
+        border-radius: 50%;
+        background-color: $color-secondary;
+        font-size: 1.2rem;
+        color: $color-white; 
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top:-1.4rem;
+        transform-style: preserve-3d;
+        transition: transform .8s;
+    }
+
+}
+
+.move-in-down {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 7.5rem;
+    top: 0;
+    animation: move-in-down .6s;
+}

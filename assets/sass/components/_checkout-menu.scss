@@ -1,0 +1,79 @@
+.checkout-menu{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    &__link{
+        text-decoration: none;
+    }
+    &__link:link,
+    &__link:visited{
+        color:$color-grey;
+    }
+    &__step{
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        &--active{
+            .checkout-menu__number{
+                color: $color-white;
+                background-color: $color-secondary;
+                font-weight: bold;
+            }
+            .checkout-menu__name{
+                font-weight: bold;
+                color: $color-secondary;
+            }
+            .checkout-menu__underline{
+                background-color: $color-secondary;
+                &::before{
+                    display:block;
+                }
+            }
+        }
+    }
+    &__step:last-child &__underline::after{
+        position: absolute;
+        content: '';
+        right: -.5px;
+        background-color: $color-white;
+        width: .8rem;
+        height: 2px;
+    }
+    &__state{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    &__number{
+        color: $color-grey;
+        background-color: $color-grey-light-3;
+        border-radius: 50%;
+        width: 3rem;
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__name{
+        margin-left: 2rem;
+    }
+    &__underline{
+        margin-top: 1rem;
+        height: 2px;
+        background-color: $color-grey-light-3;
+        position: relative;
+        transform: translateX(.75rem);
+        &::before{
+            position: absolute;
+            content: '';
+            width: 1.5rem;
+            height: 1.5rem;
+            top: -1.5rem;
+            background-color: $color-secondary;
+            -webkit-clip-path: polygon(50% 40%, 0% 100%, 100% 100%);
+            clip-path: polygon(50% 40%, 0% 100%, 100% 100%);
+            display:none;
+        }
+    }
+}

@@ -1,0 +1,82 @@
+.tabs {
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 1px solid $color-grey-light-2;
+    padding-left: 2rem;
+    &__radio{
+        display: none;
+    }
+    &__radio:checked + &__label{
+        background-color: $color-white;
+        border-bottom: none;
+    }
+    &__radio:checked + &__label::before,
+    &__radio:checked + &__label::after{
+        top: -1.5px;
+    }
+    &__radio:checked + &__label{
+        background-color: $color-white;
+        border-bottom: none;
+    }
+    &__label{
+        margin-bottom: -1px;
+        padding: 1rem 2rem;
+        border: 1px solid $color-grey-light-2;
+        background-color: $color-grey-light-3;
+        position: relative;
+        cursor: pointer;
+        transition: background-color .2s;
+    }
+    &__label::before{
+        content: '';
+        position: absolute;
+        top: -1px;
+        left: -1px;
+        width: .5rem;
+        height: 101%;
+        background-color: $color-white;
+        border-right: 1px solid $color-grey-light-2;
+        border-bottom: 1px solid $color-grey-light-2;
+        border-bottom-right-radius: 5px;
+        cursor: default;
+    }
+    &__label::after{
+        content: '';
+        position: absolute;
+        top: -1px;
+        right: -1px;
+        width: .5rem;
+        height: 101%;
+        background-color: $color-white;
+        border-left: 1px solid $color-grey-light-2;
+        border-bottom: 1px solid $color-grey-light-2;
+        border-bottom-left-radius: 5px;
+        cursor: default;
+    }
+    &-panels{
+        padding: 2rem 0;
+        position: relative;
+    }
+    // &-panel {
+    //     position: relative;
+    //     opacity: 0;
+    //     transition: opacity .2s;
+    // }
+    // &-panel:not(:last-child){
+    //     position: absolute;
+    //     top: 2rem;
+    //     left: 0;
+    //     right: 0;
+    // }
+    &-panel {
+        position: absolute;
+        left: 0;
+        right: 0;
+        opacity: 0;
+        // transition: opacity .2s;
+    }
+    &-checked{
+        opacity: 1;
+        position: relative;
+    }
+}

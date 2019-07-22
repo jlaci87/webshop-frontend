@@ -1,0 +1,18 @@
+.highlighted__products {
+    background-color: $color-white;
+    grid-column: full-start / full-end;
+
+    &--index{
+        grid-row: 6 / 6;
+    }
+    &--products{
+        grid-row: 5 / 5;
+    }
+
+    border-top: 3px solid $color-primary;
+
+    @media only screen and (max-width: 62em) {
+        grid-row: 6 / 6;
+        
+    };
+}

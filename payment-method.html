@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <script src="/assets/js/jquery.js"></script>
+
+    <title>Webshop - PAYMENT METHOD</title>
+</head>
+<body class="container">
+    <div class="container container__cart">
+
+        <div class="topbar" id="topbar">
+            <div class="topbar__button-wrapper">
+                <a href="#" class="topbar__button"><p>Log in</p></a>
+                <div class="topbar__button-undreline"></div>
+            </div>
+            <div class="topbar__button-wrapper">
+                <a href="#" class="topbar__button"><p>Sign up</p></a>
+                <div class="topbar__button-undreline"></div>
+            </div>
+            <div class="topbar__button-wrapper">
+                <a href="#" class="topbar__button"><p>Information</p></a>
+                <div class="topbar__button-undreline"></div>
+            </div>
+            <div class="topbar__button-wrapper">
+                <div class="lang-selector">
+                    <div class="lang-selector__selected">
+                        <div class="lang-selector__hun lang-checked">
+                            <img src="/assets/img/lang/hun.png" class="lang-selector__selected-img" alt="hu-flag">
+                        </div>
+                        <div class="lang-selector__uk">
+                            <img src="/assets/img/lang/uk.png" class="lang-selector__selected-img" alt="hu-flag">
+                        </div>
+                        <div class="lang-selector__ger">
+                            <img src="/assets/img/lang/ger.png" class="lang-selector__selected-img" alt="hu-flag">
+                        </div>
+                        <div class="lang-selector__esp">
+                            <img src="/assets/img/lang/esp.png" class="lang-selector__selected-img" alt="hu-flag">
+                        </div>
+                    </div>
+                    <div class="lang-selector__picker">
+                        <input type="radio" id="lang-hun" class="lang-selector__checkbox" name="language" value="hun" checked>
+                        <label for="lang-hun" class="lang-selector__box">
+                            <img src="/assets/img/lang/hun.png" class="lang-selector__picker-img" alt="hu-flag">
+                        </label>
+                        <input type="radio" id="lang-uk" class="lang-selector__checkbox" name="language" value="uk">
+                        <label for="lang-uk" class="lang-selector__box">
+                            <img src="/assets/img/lang/uk.png" class="lang-selector__picker-img" alt="uk-flag">
+                        </label>
+                        <input type="radio" id="lang-ger" class="lang-selector__checkbox" name="language" value="ger">
+                        <label for="lang-ger" class="lang-selector__box">
+                            <img src="/assets/img/lang/ger.png" class="lang-selector__picker-img" alt="ger-flag">
+                        </label>
+                        <input type="radio" id="lang-esp" class="lang-selector__checkbox" name="language" value="esp">
+                        <label for="lang-esp" class="lang-selector__box">
+                            <img src="/assets/img/lang/esp.png" class="lang-selector__picker-img" alt="esp-flag">
+                        </label>
+                    </div>                
+                </div>
+            </div>
+        </div>
+<!-- ------------------------------------------------------------ HEADER-start ---------------------------------------------------- -->  
+        <header class="header">
+            <nav class="navigation">
+                <a href="index.html" class="navigation__button"><p>Home</p></a>
+                <a href="#" class="navigation__button toggle-down"><p>Categories <i class="fas fa-sort-down"></i></p></a>
+<!------------------------- MEGADROPPDOWN-start ---------------------------------------->
+                <div class="mega-dd">
+                    <div class="mega-dd__nav">
+                        <div class="mega-dd__section mega-dd__section-1" data-index="1">
+                            <h3 class="mega-dd__title">Trousers</h3>                   
+                            <ul class="mega-dd__list">
+                                <li class="mega-dd__item"><a href="#" class="mega-dd__link">subcategory-1</a></li>
+                                <li class="mega-dd__item"><a href="#" class="mega-dd__link">subcategory-2</a></li>
+                                <li class="mega-dd__item"><a href="#" class="mega-dd__link">subcategory-3</a></li>
+                                <li class="mega-dd__item"><a href="#" class="mega-dd__link">subcategory-4</a></li>
+                                <li class="mega-dd__item"><a href="#" class="mega-dd__link">subcategory-5</a></li>
+                            </ul>
+                        </div>
+                        <div class="mega-dd__section mega-dd__section-2" data-index="2">
+                            <h3 class="mega-dd__title">Sweaters</h3>                   
+                            <ul class="mega-dd__list">
+                                <li class="mega-dd__item"><a href="#" class="mega-dd__link">subcategory-1</a></li>
+                                <li class="mega-dd__item"><a href="#" class="mega-dd__link">subcategory-2</a></li>
+                                <li class="mega-dd__item"><a href="#" class="mega-dd__link">subcategory-3</a></li>
+                                <li class="mega-dd__item"><a href="#" class="mega-dd__link">subcategory-4</a></li>
+                                <li class="mega-dd__item"><a href="#" class="mega-dd__link">subcategory-5</a></li>
+                            </ul>
+                        </div>
+                        <div class="mega-dd__section mega-dd__section-3" data-index="3">
+                            <h3 class="mega-dd__title">T-Shirts</h3>                   
+                            <ul class="mega-dd__list">
+                                <li class="mega-dd__item"><a href="#" class="mega-dd__link">subcategory-1</a></li>
+                                <li class="mega-dd__item"><a href="#" class="mega-dd__link">subcategory-2</a></li>
+                                <li class="mega-dd__item"><a href="#" class="mega-dd__link">subcategory-3</a></li>
+                                <li class="mega-dd__item"><a href="#" class="mega-dd__link">subcategory-4</a></li>
+                                <li class="mega-dd__item"><a href="#" class="mega-dd__link">subcategory-5</a></li>
+                            </ul>
+                        </div>
+                        <div class="mega-dd__section mega-dd__section-4" data-index="4">
+                            <h3 class="mega-dd__title">Shirts</h3>                   
+                            <ul class="mega-dd__list">
+                                <li class="mega-dd__item"><a href="#" class="mega-dd__link">subcategory-1</a></li>
+                                <li class="mega-dd__item"><a href="#" class="mega-dd__link">subcategory-2</a></li>
+                                <li class="mega-dd__item"><a href="#" class="mega-dd__link">subcategory-3</a></li>
+                                <li class="mega-dd__item"><a href="#" class="mega-dd__link">subcategory-4</a></li>
+                                <li class="mega-dd__item"><a href="#" class="mega-dd__link">subcategory-5</a></li>
+                            </ul>
+                        </div>
+                        <div class="mega-dd__section mega-dd__section-5" data-index="5">
+                            <h3 class="mega-dd__title">Outerwear</h3>                   
+                            <ul class="mega-dd__list">
+                                <li class="mega-dd__item"><a href="#" class="mega-dd__link">subcategory-1</a></li>
+                                <li class="mega-dd__item"><a href="#" class="mega-dd__link">subcategory-2</a></li>
+                                <li class="mega-dd__item"><a href="#" class="mega-dd__link">subcategory-3</a></li>
+                                <li class="mega-dd__item"><a href="#" class="mega-dd__link">subcategory-4</a></li>
+                                <li class="mega-dd__item"><a href="#" class="mega-dd__link">subcategory-5</a></li>
+                            </ul>
+                        </div>
+                        
+                        
+                    </div>
+                    <div class="mega-dd__advert">
+                        <div class="mega-dd__img-container">
+                            <img src="/assets/img/ruha-1a.jpg" alt="mega-dd__advert" class="mega-dd__img mega-dd__category-1 fade-in" data-index="1">
+                            <img src="/assets/img/ruha-5a.jpg" alt="mega-dd__advert" class="mega-dd__img mega-dd__category-2" data-index="2">
+                            <img src="/assets/img/ruha-4a.jpg" alt="mega-dd__advert" class="mega-dd__img mega-dd__category-3" data-index="3">
+                            <img src="/assets/img/ruha-7a.jpg" alt="mega-dd__advert" class="mega-dd__img mega-dd__category-4" data-index="4">
+                            <img src="/assets/img/ruha-2a.jpg" alt="mega-dd__advert" class="mega-dd__img mega-dd__category-5" data-index="5">
+    
+                        </div>
+                    </div>
+                    
+                </div>
+<!-- ----------------------------------- MEGADROPPDOWN-end ----------------------------------- -->
+                <a href="#" class="navigation__button"><p>Blog</p></a>
+                <a href="#" class="navigation__button"><p>Contacts</p></a>
+                <a href="cart.html" class="navigation__button toggle-down"><p>Cart&nbsp;<i class="fas fa-shopping-cart navigation__cart"></i>&nbsp;<span class="navigation__cart-count">2</span></p></a>
+                <!------------------------- MEGADROPPDOWN--SMALL-start ---------------------------------------->            
+                            <div class="mega-dd mega-dd--small">
+            <!-- ------------------------------------------------- CARTITEM-start ----------------------------------------- -->
+                            <div class="cart__item cart__item--small">
+                                    <div class="cart__item-heading">
+                                        <h3 class="product-item-title product-item-title--xsmall">
+                                            Red Solid Pant
+                                        </h3>
+                                        <button class="btn btn__remove btn__remove--small">Remove item</button>
+                                    </div>
+                                    <div class="cart__item-content">
+                                        <div class="cart__item-container">
+                                            <img src="/assets/img/ruha-1a.jpg" alt="cart item image" class="cart__item-img">
+                                        </div>
+                                        <div class="cart__item-size">
+                                                <label for="quantitiy">Size:&nbsp;</label>
+                                            <select name="item-size" class="product-item__num product-item__num--wide" id="item-size">
+                                                <option value="xs">XS</option>
+                                                <option value="s">S</option>
+                                                <option value="m">M</option>
+                                                <option value="l" selected>L</option>
+                                                <option value="xl">XL</option>
+                                            </select>
+                                        </div>
+                                        <div class="cart__item-quantity">
+                                            <label for="quantitiy">Quantyity:&nbsp;</label>
+                                            <input class="product-item__num " id="quantity" type="number" value="1">
+                                        </div>
+                                        <div class="cart__item-price">Price:&nbsp;<span>$30.00</span></div>
+                
+                                    </div>
+                                </div>
+            <!-- ------------------------------------------------- CARTITEM-end ----------------------------------------- -->
+            <!-- ------------------------------------------------- CARTITEM-start ----------------------------------------- -->
+                                <div class="cart__item cart__item--small">
+                                    <div class="cart__item-heading">
+                                        <h3 class="product-item-title product-item-title--xsmall">
+                                            Blue Suit
+                                        </h3>
+                                        <button class="btn btn__remove btn__remove--small">Remove item</button>
+                                    </div>
+                                    <div class="cart__item-content">
+                                        <div class="cart__item-container">
+                                            <img src="/assets/img/ruha-2a.jpg" alt="cart item image" class="cart__item-img">
+                                        </div>
+                                        <div class="cart__item-size">
+                                                <label for="quantitiy">Size:&nbsp;</label>
+                                            <select name="item-size" class="product-item__num product-item__num--wide" id="item-size">
+                                                <option value="xs">XS</option>
+                                                <option value="s">S</option>
+                                                <option value="m">M</option>
+                                                <option value="l" selected>L</option>
+                                                <option value="xl">XL</option>
+                                            </select>
+                                        </div>
+                                        <div class="cart__item-quantity">
+                                            <label for="quantitiy">Quantyity:&nbsp;</label>
+                                            <input class="product-item__num " id="quantity" type="number" value="1">
+                                        </div>
+                                        <div class="cart__item-price">Price:&nbsp;<span>$30.00</span></div>
+            
+                                    </div>
+                                </div>
+            <!-- ------------------------------------------------- CARTITEM-end ----------------------------------------- -->
+                            </div>
+                <!------------------------- MEGADROPPDOWN--SMALL-end ---------------------------------------->
+                <div class="search__open">
+                    <input type="checkbox" id="search" class="search__open-checkbox">
+                    <label for="search" class="search__open-btn">SEARCH</label>
+                    <div class="search">
+                        <form class="search__container">
+                            <button class="search__btn" type="submit"><i class="fas fa-search navigation__search"></i></button>
+                            <input type="text" placeholder="Search..." name="search" class="search__input">
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </header>
+<!-- ------------------------------------------------- HEADER-end ---------------------------------------------------------- -->
+
+<!-- ------------------------------------------------- CART-start ----------------------------------------- -->    
+    <section class="cart">
+        <h2 class="section-heading">Payment<span>&nbsp;</span><span class="section-heading__second-word">Method</span></h2>
+<!-- ------------------------------------------------- CHECKOUT-start ----------------------------------------- -->
+<div class="checkout-menu">
+        <div class="checkout-menu__step">
+            <a href="cart.html" class="checkout-menu__link">
+                <div class="checkout-menu__state">
+                    <div class="checkout-menu__number">1</div>
+                    <p class="checkout-menu__name">Cart content</p>
+                </div>
+            </a>
+            <div class="checkout-menu__underline"></div>
+        </div>
+        <div class="checkout-menu__step">
+            <a href="personal-data.html" class="checkout-menu__link">
+                <div class="checkout-menu__state">
+                    <div class="checkout-menu__number">2</div>
+                    <p class="checkout-menu__name">Personal data</p>
+                </div>
+            </a>    
+            <div class="checkout-menu__underline"></div>
+        </div>
+        <div class="checkout-menu__step">
+            <a href="delivery-method.html" class="checkout-menu__link">
+                <div class="checkout-menu__state">
+                    <div class="checkout-menu__number">3</div>
+                    <p class="checkout-menu__name">Delivery method</p>
+                </div>
+            </a>
+            <div class="checkout-menu__underline"></div>
+        </div>
+        <div class="checkout-menu__step checkout-menu__step--active">
+            <a href="payment-method.html" class="checkout-menu__link">
+                <div class="checkout-menu__state">
+                    <div class="checkout-menu__number">4</div>
+                    <p class="checkout-menu__name">Payment method</p>
+                </div>
+            </a>    
+            <div class="checkout-menu__underline"></div>
+        </div>
+        <div class="checkout-menu__step ">
+            <a href="checkout.html" class="checkout-menu__link">    
+                <div class="checkout-menu__state">
+                    <div class="checkout-menu__number">5</div>
+                    <p class="checkout-menu__name">Checkout</p>
+                </div>
+            </a>
+            <div class="checkout-menu__underline"></div>
+        </div>
+    </div>
+<!-- ------------------------------------------------- CHECKOUT-end ----------------------------------------- -->
+        <div class="cart__container">
+            <div class="cart__wrapper">
+                <div class="form__border form__border--p">
+                    <div class="delivery-address__container">
+                        <span class="delivery-address__label">
+                            Current delivery address:
+                        </span>
+                        <span class="delivery-address">
+                            István Példa, 15. Szófia utca Budapest 1065, Hungary,<br>+36701234567
+                        </span>
+                        <a href="personal-data.html" class="footer__link">Change</a>
+                    </div>
+                </div>
+                <div class="form__border form__border--p">
+                    <div class="delivery-address__container">
+                        <span class="delivery-address__label">
+                            Chosen delivery method:
+                        </span>
+                        <span class="delivery-address">
+                            Delivery via RandomCourierCompany Ltd.
+                        </span>
+                        <a href="delivery-method.html" class="footer__link">Change</a>
+                    </div>
+                </div>
+                <h4 class="form-heading">Choose payment method</h4>
+                <form action="" class="delivery-form">
+                    <div class="delivery">
+                        <div class="delivery-type__wrapper">
+                            <div class="custom-radio__wrapper">
+                                <input type="radio" class="custom-radio" name="payment-method" value="payment-1" id="payment-1">
+                                <label for="payment-1" class="custom-radio__ladel">Pay with cash/card in our shop</label>
+                            </div>
+                            <span class="delivery-type">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem minima totam quia pariatur optio dolore, nesciunt deleniti eaque, reprehenderit suscipit ab debitis illo sapiente veniam fugiat consequuntur sunt ullam! Unde.
+                            </span>
+    
+                        </div>
+                        <div class="delivery-type__wrapper">
+                            <div class="custom-radio__wrapper">
+                                <input type="radio" class="custom-radio" name="payment-method" value="payment-2" id="payment-2" checked>
+                                <label for="payment-2" class="custom-radio__ladel">Online payment</label>
+                            </div>
+                            <span class="delivery-type">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis reiciendis totam fugiat culpa cumque odio laboriosam optio modi accusantium quidem numquam laudantium quaerat, iste labore laborum eos aspernatur quas distinctio.
+                            </span>
+    
+                        </div>
+                        <div class="delivery-type__wrapper">
+                            <div class="custom-radio__wrapper">
+                                <input type="radio" class="custom-radio" name="payment-method" value="payment-3" id="payment-3">
+                                <label for="payment-3" class="custom-radio__ladel">Pay via bank transfer</label>
+                            </div>
+                            <span class="delivery-type">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto consequuntur magnam impedit. Natus deserunt quaerat illum, sit necessitatibus vitae aliquid? Doloremque rerum explicabo mollitia inventore architecto ratione vel ipsum cumque!
+                            </span>
+                            <div class="form__border form__border--p">
+                                    <div class="delivery-address__container">
+                                        <span class="delivery-address__label">
+                                            Chosen billing addess:
+                                        </span>
+                                        <span class="delivery-address">
+                                                István Példa, 15. Szófia utca Budapest 1065, Hungary,<br>+36701234567
+                                        </span>
+                                        <a href="personal-data.html" class="footer__link">Change</a>
+                                    </div>
+                                </div>
+                        </div>        
+                    </div>
+                    <input type="submit" name="payment-method" id="purchase" class="btn btn__adding u-margin-bottom-small" value="Choose method">
+                </form>
+                
+            </div>
+            <div class="cart__summary-wrapper">                
+<!-- ------------------------------------------------- CART-SUMMARY-start ----------------------------------------- -->
+            <div class="cart__summary">
+                <a href="delivery-method.html" class="btn btn__checkout">Proceed to checkout</a>
+                <div class="cart__summary-item">
+                    <span class="cart__summary-name"> Red Solid Pant (1)</span>
+                    <span class="cart__summary-price"> $30.00</span>
+                </div>
+                <div class="cart__summary-item">
+                    <span class="cart__summary-name"> Blue Suit (1)</span>
+                    <span class="cart__summary-price"> $30.00</span>
+                </div>
+                <div class="cart__summary-item">
+                    <span class="cart__summary-name"> Shipping</span>
+                    <span class="cart__summary-price"> $4.50</span>
+                </div>
+                <div class="cart__summary-total">
+                    <span class="cart__summary-name cart__summary-name--total">Total</span>
+                    <span class="cart__summary-price cart__summary-price--total"> $64.50</span>
+                </div>
+            </div>
+<!-- ------------------------------------------------- CART-SUMMARY-end ----------------------------------------- -->
+            <a href="checkout.html" class="btn btn__forward">Forward&nbsp;<i class="fas fa-angle-double-right"></i></a>
+            </div>
+        </div>
+
+    </section>
+<!-- ------------------------------------------------- CART-end ----------------------------------------- -->    
+<!-- -------------------------------------------------------------------- FOOTER-strat  ------------------------------------------------------------------------ -->
+        <footer class="footer">
+    
+            <div class="footer__container">
+<!-- ----------------------------------------- FOOTER-SECTION-start  ------------------------------------------- -->
+                <div class="footer__section">
+                    <h3 class="footer-heading">Pages</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="#" class="footer__link footer__item-link">Registration</a></li>
+                        <li class="footer__item"><a href="index.html" class="footer__link footer__item-link">Home</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link footer__item-link">Categories</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link footer__item-link">Blog</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link footer__item-link">Contact</a></li>
+                        <li class="footer__item"><a href="cart.html" class="footer__link footer__item-link">Cart</a></li>
+                </div>
+<!-- ----------------------------------------- FOOTER-SECTION-start  ------------------------------------------- -->
+                <div class="footer__section">
+                    <h3 class="footer-heading">My Account</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="#" class="footer__link footer__item-link">Profile</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link footer__item-link">Wish List</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link footer__item-link">Previous Purchases</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link footer__item-link">Settings</a></li>
+                </div>
+<!-- ----------------------------------------- FOOTER-SECTION-start  ------------------------------------------- -->
+                <div class="footer__section">
+                    <h3 class="footer-heading">About Us</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="#" class="footer__link footer__item-link">Company Info</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link footer__item-link">Blog</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link footer__item-link">Advertise with us</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link footer__item-link">Policies</a></li>
+    
+                </div>
+<!-- ----------------------------------------- FOOTER-SECTION-start  ------------------------------------------- -->
+                <div class="footer__section">
+                    <h3 class="footer-heading">Help & Contact</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="#" class="footer__link footer__item-link">Contact us</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link footer__item-link">Purchase Info</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link footer__item-link">FAQ</a></li>
+     
+                </div>
+<!-- ----------------------------------------- FOOTER-SECTION-end  ------------------------------------------- -->
+<!-- ----------------------------------------- FOOTER-SECTION-start  ------------------------------------------- -->
+                <div class="footer__section">
+                    <h3 class="footer-heading">Stay Tuned</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="#" class="footer__link footer__item-link"><i class="fab fa-facebook-square"></i>&nbsp;Facebook</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link footer__item-link"><i class="fab fa-twitter-square"></i>&nbsp;Twitter</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link footer__item-link"><i class="fab fa-instagram"></i>&nbsp;Instagram</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link footer__item-link"><i class="fab fa-youtube-square"></i>&nbsp;Youtube</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link footer__item-link"><i class="fas fa-envelope-square"></i>&nbsp;Newsletter</a></li>
+                </div>
+<!-- ----------------------------------------- FOOTER-SECTION-end  ------------------------------------------- -->
+            </div>
+            <div class="footer__rights">
+                <p>Coryright  &COPY; <a href="https://proonline.hu"class="footer__link footer__link--rights">Pro Online</a>, 2019.</p>
+            </div>
+    
+        </footer>
+<!-- -------------------------------------------------------------------- FOOTER-end  ------------------------------------------------------------------------ -->
+    </div>
+
+<!-- to top button -->
+    <div id="return-to-top">
+        <div class="return-to-top-inner">
+            <a href="javascript:" id=""><i class="fas fa-chevron-up"></i></a>
+        </div>
+    </div>
+    
+    <script src="/assets/js/back-to-top.js"></script>
+    <script src="/assets/js/nav-from-top.js"></script>
+    <script src="/assets/js/slick.js"></script>
+    <script src="/assets/js/ion.rangeSlider.js"></script>
+    
+
+    <!-- <script>
+    // This is the important part!
+
+function collapseSection(element) {
+  // get the height of the element's inner content, regardless of its actual size
+  var sectionHeight = element.scrollHeight;
+  
+  // temporarily disable all css transitions
+  var elementTransition = element.style.transition;
+  element.style.transition = '';
+  
+  // on the next frame (as soon as the previous style change has taken effect),
+  // explicitly set the element's height to its current pixel height, so we 
+  // aren't transitioning out of 'auto'
+  requestAnimationFrame(function() {
+    element.style.height = sectionHeight + 'px';
+    element.style.transition = elementTransition;
+    
+    // on the next frame (as soon as the previous style change has taken effect),
+    // have the element transition to height: 0
+    requestAnimationFrame(function() {
+      element.style.height = 0 + 'px';
+    });
+  });
+  
+  // mark the section as "currently collapsed"
+  element.setAttribute('data-collapsed', 'true');
+}
+
+function expandSection(element) {
+  // get the height of the element's inner content, regardless of its actual size
+  var sectionHeight = element.scrollHeight;
+  
+  // have the element transition to the height of its inner content
+  element.style.height = sectionHeight + 'px';
+
+  // when the next css transition finishes (which should be the one we just triggered)
+  element.addEventListener('transitionend', function(e) {
+    // remove this event listener so it only gets triggered once
+    element.removeEventListener('transitionend', arguments.callee);
+    
+    // remove "height" from the element's inline styles, so it can return to its initial value
+    element.style.height = null;
+  });
+  
+  // mark the section as "currently not collapsed"
+  element.setAttribute('data-collapsed', 'false');
+}
+
+document.querySelector('.sidebar__tog').addEventListener('click', function(e) {
+  var section = document.querySelector('.sibebar__subcategory-list');
+  var isCollapsed = section.getAttribute('data-collapsed') === 'true';
+    
+  if(isCollapsed) {
+    expandSection(section)
+    section.setAttribute('data-collapsed', 'false')
+  } else {
+    collapseSection(section)
+  }
+});
+    
+    </script> -->
+
+    <!-- config js -->
+    <script src="/assets/js/back-to-top.js"></script>
+    <script src="/assets/js/slider.js"></script>
+    <script src="/assets/js/highlighted-slider.js"></script>
+    <script src="/assets/js/filter.js"></script>
+    <script src="/assets/js/lang-selector.js"></script>
+    <script src="/assets/js/mega-dd.js"></script>
+    <script src="/assets/js/product-gallery.js"></script>
+    <script src="/assets/js/tabs.js"></script>
+
+
+</body>
+</html>

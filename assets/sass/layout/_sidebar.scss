@@ -1,0 +1,184 @@
+.sidebar {
+    grid-column: sidebar-start / sidebar-end;
+    grid-row: 4 / 4;
+    
+    // as container
+    background-color: $color-white;
+    display: flex;
+    flex-direction: column;
+    padding:  2rem 0 2rem 2rem;
+    border-right: 1px solid $color-primary;
+    &__section{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    &__section:not(:last-child){
+        margin-bottom: 2rem;
+    }
+    //////////////////////////////////
+    ////////////////// category-picker
+    &__category-picker{
+
+    }
+    &__category-list{
+        align-self: stretch;
+        padding-left: 1rem;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+    &__category-item{
+        margin-bottom: .5rem;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        i{
+            padding-right: 2rem;
+            transition: transform 0.2s,
+                        color .6s .1s;
+        }
+    }
+    &__category-item::before{
+        content: "";
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 3px;
+        background-color: $color-secondary;
+        transform: scaleY(0);
+        transition: transform 0.2s, 
+                    width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s, 
+                    background-color 0.1s;
+    }
+    &__category-link{
+        display: block;
+        padding: 1rem 1rem;
+        position: relative;
+    }
+    &__category-item:hover::before,
+    &__category-item:active::before{
+        transform: scaleY(1);
+        width: 100%;
+    }
+    &__category-item:hover > &__category-link,
+    &__category-item:active > &__category-link,
+    &__category-item:hover > &__category-link + i,
+    &__category-item:active > &__category-link + i{
+        color: $color-white;
+        transform: translateX(1rem);
+    }
+
+    &__category-link:link,
+    &__category-link:visited{
+        text-decoration: none;
+        color: $color-grey-light-1;
+        transition: all .4s .2s;
+                    
+    }
+    &__category-link:hover,
+    &__category-link:active{
+        color: $color-white;
+        transform: translateX(1rem);
+    }
+
+    &__category-item:hover .category-toggle {
+        transform: scaleX(1);
+        opacity: 1;
+    }
+    /////////////////////////////////////
+    ////////////////// subcategory-picker
+    &__subcategory-picker{
+        position: relative;
+    }
+    &__subcategory-list{
+        align-self: stretch;
+        padding-left: 1rem;
+        display: flex;
+        flex-direction: column;
+        height: 12rem;
+        overflow: hidden;
+        transition: all .4s;
+    }
+    &__subcategory-item{
+        margin-bottom: .5rem;
+        transition: all .2s;
+    }
+    &__subcategory-link {
+        display: block;
+    }
+    &__subcategory-link:link,
+    &__subcategory-link:visited{
+        text-decoration: none;
+        color: $color-grey-light-1;
+        transition: all .2s
+    }
+    &__subcategory-link:hover,
+    &__subcategory-link:active{
+        transform: translateX(1rem);
+        color: $color-primary;
+    }
+    
+    ///////////////////////////////////
+    ///////////////////// price filter
+    &__price-filter{
+        padding-right: 2rem;
+
+        &-wrapper {
+            width:100%;
+        }
+    }
+    //////////////////////////////////
+    //////////////////// brand picker
+    &__brand-picker{
+        position: relative;
+    }
+    &__brand-list{
+        height: 16rem;
+        overflow: hidden;
+        transition: all .4s;
+    }
+    
+
+    //////////////////////////////////
+    //////////////////////// shipping
+    &__shipping{
+        
+    }
+
+    ///////////////////////////////////
+    /////////////////// sidebar collapse
+    .collapse-checkbox{
+        display: none;
+    }
+    &__col{
+        cursor: pointer;
+        position: absolute;
+        left: 90%;
+    }
+    &__collapsed{
+        transform: scale(0);
+        opacity: 0;
+        transform-origin: top;
+        transition: all .2s;
+    }
+    .collapse-checkbox:checked ~ &__subcategory-list &__collapsed{
+        transform: scale(1);
+        opacity: 1;
+    }
+    .collapse-checkbox:checked ~ &__subcategory-list{
+        height: auto;
+    }
+    .collapse-checkbox:checked ~ &__brand-list &__collapsed{
+        transform: scale(1);
+        opacity: 1;
+    }
+    .collapse-checkbox:checked ~ &__brand-list {
+        height: auto;
+    }
+
+}

@@ -1,0 +1,52 @@
+.highlighted-info{
+    background-color: $color-white;
+    grid-column: center-start / center-end;
+    grid-row: 4 / 4;
+// as a container
+    display: flex;
+    max-height: 50rem;
+
+    &__content, 
+    &__figure{
+        width: 50%;    
+    }
+    &__content{
+        display: flex;
+        flex-direction: column;
+        padding: 3rem;
+        align-items: center;
+        justify-content:center;
+        border: 1px solid $color-grey-light-3;
+    }
+    &__text{
+        margin-top: 1rem;
+        color:$color-grey-light-1;
+        
+    }
+    &__figure{
+        position: relative;
+        overflow: hidden;
+       
+    }
+    &__img{
+        display: block;
+        height: 100%;
+        // height: auto;
+    }
+    &__caption{
+        position: absolute;
+        bottom: 11rem;
+        left:0;
+        right: 0;
+        font-size: 2rem;
+        background-color: rgba( $color-grey-light-1,.7);
+        padding: 2rem 3rem;
+        color: $color-white;
+        text-align: center;
+    }
+    .btn__forward{
+        position: absolute;
+        right: 2rem;
+        bottom:2rem;
+    }
+}

@@ -1,0 +1,45 @@
+.topbar {
+
+    grid-column: full-start / full-end;
+    grid-row: 1 / 1;
+
+    background-color: $color-white;
+    display: flex;
+    flex:1;
+    align-items: stretch;
+    justify-content: flex-end;
+
+
+    &__button-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-self: center;
+        margin-right: 3rem;
+        position: relative;
+    }
+
+    &__button,
+    &__button:visited {
+        color: $color-grey-light-2;
+        text-decoration: none;
+    }
+
+    &__button-undreline {
+        height: 1.5px;
+        margin-top: -1px;
+        background-color: $color-primary;
+        transform: scaleX(0);
+        transition: all .2s;
+    }
+
+    &__button:hover,
+    &__button:active {
+        color: $color-primary;
+    }
+
+    &__button:hover + &__button-undreline,
+    &__button:active + &__button-undreline {
+        transform: scaleX(1);
+    }
+}

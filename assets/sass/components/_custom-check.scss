@@ -1,0 +1,43 @@
+.custom-checkbox {
+    display: none;
+    &__wrapper{
+        margin-bottom: .5rem;
+        position: relative;
+        padding: .5rem 0;
+    }
+    &__label {
+        padding-left: 3rem;
+        transition: color .2s;
+        cursor: pointer;
+    }
+    &__label::before{
+        content: '';
+        position: absolute;
+        top: 1rem;
+        left: 0;
+        width: 1.5rem;
+        height: 1.5rem;
+        background-color: $color-grey-light-2;
+        border-radius: 2px;
+    }
+    &__label::after{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: .7rem;
+        width: 1.8rem;
+        height: .8rem;
+        background-color: transparent;
+        border-left: 3px solid $color-secondary;
+        border-bottom: 3px solid $color-secondary;
+        border-radius: 2px;
+        transform: rotate(0) skew(-25deg, 0) scale(0,0);
+        transition: all .2s;
+    }
+    &:checked + &__label::after {
+        transform: rotate(-60deg) skew(-25deg, 0) scale(1,1);
+    }
+    &:checked + &__label {
+        color: $color-primary;
+    }
+}

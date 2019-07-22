@@ -1,0 +1,64 @@
+.compare {
+    grid-column: full-start / full-end;
+    grid-row: 4 / 4;
+
+    border: 2px solid orangered;
+    border-collapse: collapse;
+
+
+// as grid container
+    display:grid;
+    // grid-auto-rows: minmax( min-content, 40rem);
+    grid-template-columns: [full-start] minmax(2rem, 1fr) [table-head-start] 20vw [table-head-end table-content-start] 1fr [table-content-end] minmax(2rem, 1fr) [full-end];
+    
+    &__head{
+        border: 2px solid #123123; 
+        border-collapse: collapse;
+        grid-column: table-head-start / table-head-end;
+        
+        &--1{
+            grid-row: 1 / 1;
+        }
+    }
+    &__content{
+        border: 2px solid #876cba;
+        grid-column: table-content-start / table-content-end;
+        grid-auto-columns: 1fr;
+        &--1{
+            grid-row: 1 / 1;
+        }
+        &--2{
+            grid-row: 2 / 2;
+        }
+        &--3{
+            grid-row: 3 / 3;
+        }
+        &--4{
+            grid-row: 4 / 4;
+        }
+        &--5{
+            grid-row: 5 / 5;
+        }
+        &--6{
+            grid-row: 6 / 6;
+        }
+        &--7{
+            grid-row: 7 / 7;
+        }
+        &--8{
+            grid-row: 8 / 8;
+        }
+        &--9{
+            grid-row: 9 / 9;
+        }
+        &--10{
+            grid-row: 10 / 10;
+        }
+        &--11{
+            grid-row: 11 / 11;
+        }
+        &--12{
+            grid-row: 12 / 12;
+        }
+    }
+}
